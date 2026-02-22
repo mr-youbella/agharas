@@ -78,7 +78,7 @@ export default function Reports()
 					return (
 						<div key={index} className="bg-white flex gap-3 p-4 rounded-xl items-center group hover:shadow-[0_0_5px_gray]">
 							<FontAwesomeIcon className="my-auto text-2xl text-orange-500" icon={setIcon(value.category)} />
-							<div className="flex-1 text-left">
+							<div className="flex-1 text-left space-y-1.5">
 								<h2 className="text-xl font-bold group-hover:text-[#E4694E]">{value.issue_title}</h2>
 								<p className="text-base text-gray-500"><FontAwesomeIcon className="mr-px text-[#E4694E]/80" icon={faLocationDot}/>{value.address}</p>
 								<p className="text-base text-gray-500"><FontAwesomeIcon className="mr-px text-[#E4694E]/80" icon={faMapPin}/>{value.neighborhood}</p>
