@@ -11,7 +11,7 @@ export default function NavBar()
 
 	return (
 		<div className="bg-white">
-			<nav className="p-4 flex text-black justify-between lg:w-1/2 mx-auto">
+			<nav className="p-4 flex text-black justify-between xl:w-1/2 mx-auto">
 				<Link href="/"><h1 className="mr-auto md:text-center text-3xl font-bold text-[#E4694E] cursor-pointer">Agharas</h1></Link>
 				<ul className="sm:flex gap-5 items-center hidden">
 					<Link href="/"><li className="text-base font-bold cursor-pointer hover:text-[#E4694E]">Home</li></Link>

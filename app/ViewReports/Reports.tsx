@@ -38,7 +38,7 @@ export default function Reports()
 
 	return (
 		<div>
-			<div className="grid grid-cols-4 mt-10 gap-4">
+			<div className="grid grid-cols-2 sm:grid-cols-4 mt-10 gap-4">
 				<div className="bg-white p-4 py-6 rounded-xl border border-gray-300">
 					<h2 className="text-[#E4694E] text-3xl font-bold">{data.length}</h2>
 					<p className="text-gray-400 text-base font-semibold mt-px">Total Reports</p>
@@ -57,14 +57,14 @@ export default function Reports()
 				</div>
 			</div>
 			<div className="bg-white rounded-2xl p-7 mt-10">
-				<div className="flex flex-col bg-linear-to-br from-[#E4694E]/30 to-yellow-300/30 rounded-2xl p-70 space-y-2">
+				<div className="flex flex-col bg-linear-to-br from-[#E4694E]/30 to-yellow-300/30 rounded-2xl p-10 xl:p-60 space-y-2">
 					<FontAwesomeIcon className="text-6xl mx-auto text-[#E4694E]/50" icon={faLocationDot}/>
 					<h2 className="text-2xl font-bold">Interactive Map</h2>
 					<p className="text-gray-400 font-semibold">View all reports on a live map with location pins</p>
-					<button className="bg-[#E4694E] w-1/3 mx-auto p-3 rounded-2xl text-white font-bold text-xl mt-4 cursor-pointer hover:shadow-[0_0_5px_gray]">Map Coming Soon</button>
+					<button className="bg-[#E4694E] xl:w-full mx-auto p-3 rounded-2xl text-white font-bold text-xl mt-4 cursor-pointer hover:shadow-[0_0_5px_gray]">Map Coming Soon</button>
 				</div>
 			</div>
-			<div className="flex bg-white rounded-2xl p-5 gap-3 mt-10">
+			<div className="flex bg-white rounded-2xl p-5 gap-3 mt-10 overflow-auto">
 				<input value={search} onChange={(event) => (setSearch(event.target.value))} type="search" className="flex-1 bg-[#FFFBF7] border border-gray-300 rounded-xl p-2 placeholder:text-gray-400" placeholder="Search by title, address, or neighborhood..."/>
 				<FontAwesomeIcon className="my-auto text-2xl opacity-60" icon={faFilter} />
 				<button onClick={() => (setFilter("all"))} className={`rounded-xl ${filter === "all" ? "bg-[#E4694E] text-white" : "bg-[#E2d9cf]"} font-semibold  px-5 cursor-pointer`}>All</button>
