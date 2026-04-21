@@ -1,3 +1,4 @@
+import Footer from "../footer";
 import NavBar from "../NavBar";
 import Reports from "./Reports";
 
@@ -13,6 +14,7 @@ export default function ReportAnIssue()
 				</div>
 				<Reports />
 			</menu>
+			<Footer />
 		</div>
 	);
 }
