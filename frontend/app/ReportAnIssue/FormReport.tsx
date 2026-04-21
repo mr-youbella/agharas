@@ -77,7 +77,7 @@ export default function FormReport()
 				<FontAwesomeIcon className="text-3xl mx-auto text-[#E4694E]" icon={faUpload} />
 				<h3 className="font-bold">Click to upload a photo</h3>
 				<p className="text-gray-500 ">{name_image || "PNG, JPG up to 10MB. Clear photos help us understand the issue better."}</p>
-				<input onChange={(event) => (setNameImage(event.target.files && event.target.files[0].name))} name="image" id="image" className="hidden" type="file" accept=".png, .jpg" required/>
+				<input onChange={(event) => (setNameImage(event.target.files && event.target.files[0].name))} name="image" id="image" className="hidden" type="file" accept=".png, .jpg, .webp" required/>
 			</label>
 			<div className="flex flex-col md:flex-row gap-4">
 				<div className="flex-1 flex flex-col">
