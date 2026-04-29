@@ -55,26 +55,29 @@ BlassaReviews bridges the gap between citizens and city authorities. Inspired by
 
 ```
 blassareviews/
-├── app/
-│   ├── page.tsx                    # Home page
-│   ├── layout.tsx                  # Root layout
-│   ├── NavBar.tsx                  # Navigation
-│   ├── footer.tsx                  # Footer
-│   ├── About/
-│   │   └── page.tsx                # About page
-│   ├── ReportAnIssue/
-│   │   ├── page.tsx                # Report form page
-│   │   ├── FormReport.tsx          # Form component
-│   │   └── sendData.ts             # Server action
-│   └── ViewReports/
-│       ├── page.tsx                # Reports page
-│       ├── Reports.tsx             # Main component with map
-│       └── ReportsData.ts          # API fetch functions
-├── server/
-│   ├── server.ts                   # Fastify server
-│   └── uploadImageToCloudinary.ts  # Cloudinary upload
-├── public/                         # Static assets
-└── package.json
+├── frontend/
+│   ├── app/
+│   │   ├── page.tsx                    # Home page
+│   │   ├── layout.tsx                  # Root layout
+│   │   ├── NavBar.tsx                  # Navigation
+│   │   ├── footer.tsx                  # Footer
+│   │   ├── About/
+│   │   │   └── page.tsx                # About page
+│   │   ├── ReportAnIssue/
+│   │   │   ├── page.tsx                # Report form page
+│   │   │   ├── FormReport.tsx          # Form component
+│   │   │   └── sendData.ts             # Server action
+│   │   ├── ViewReports/
+│   │   │  ├── page.tsx                # Reports page
+│   │   │ ├── Reports.tsx             # Main component with map
+│   │   │ └── ReportsData.ts          # API fetch functions
+│
+├── backend/
+│   ├── src/
+│   │   ├── server.ts                   # Fastify server
+│   │   └── uploadImageToCloudinary.ts  # Cloudinary upload
+│
+└──  .env
 ```
 
 ---
@@ -97,14 +100,14 @@ cd blassareviews
 
 **2. Install frontend dependencies**
 ```bash
+cd frontend
 npm install
 ```
 
 **3. Install backend dependencies**
 ```bash
-cd server
+cd backend
 npm install
-cd ..
 ```
 
 **4. Create `.env` file in root**
@@ -136,13 +139,14 @@ CREATE TABLE blassareviews (
 
 **6. Run backend**
 ```bash
-cd server
+cd backend
 npm run dev
 # Runs on http://localhost:3001
 ```
 
 **7. Run frontend (new terminal)**
 ```bash
+cd frontend
 npm run dev
 # Runs on http://localhost:3000
 ```
@@ -213,7 +217,7 @@ Project Link: [Github](https://github.com/mr-youbella/BlassaReviews)
 
 ## 🙏 Acknowledgments
 
-- Inspired by Moroccan community values (jema'a)
+- Inspired by Moroccan community values
 - Built with ❤️ for better cities
 
 ---

@@ -46,7 +46,7 @@ export default function About()
 				<div className="bg-white rounded-3xl mx-5 lg:mx-auto lg:w-2/3 mt-10">
 					<div className="lg:w-1/2 lg:mx-auto p-2 py-10">
 						<h2 className="text-3xl font-bold pb-3">Inspired by Moroccan Values</h2>
-						<p className="text-gray-400 text-base font-semibold py-5">BlassaReviews is inspired by the collaborative spirit, cultural richness, and community values deeply rooted in Moroccan society. We celebrate the traditional "jema'a" concept - a community gathering where voices are heard and decisions are made collectively.</p>
+						<p className="text-gray-400 text-base font-semibold py-5">BlassaReviews is inspired by the collaborative spirit, cultural richness, and community values deeply rooted in Moroccan society. We celebrate the traditional concept - a community gathering where voices are heard and decisions are made collectively.</p>
 						<p className="text-gray-400 text-base font-semibold">Just as Morocco's beautiful architecture blends geometric patterns and intricate designs, our platform weaves together technology and human connection to create stronger, more beautiful communities.</p>
 					</div>
 				</div>

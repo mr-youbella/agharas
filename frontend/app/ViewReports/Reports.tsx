@@ -7,13 +7,7 @@ import { getReports } from "./ReportsData";
 import type { Issue, Locations } from "./ReportsData";
 import Modal from "react-modal";
 import Image from "next/image";
-import {
-	Map,
-	MapMarker,
-	MarkerContent,
-	MarkerPopup,
-	MarkerTooltip,
-} from "@/components/ui/map";
+import { Map, MapMarker, MarkerContent, MarkerPopup, MarkerTooltip } from "@/components/ui/map";
 import { Card } from "@/components/ui/card";
 
 Modal.setAppElement("body");
